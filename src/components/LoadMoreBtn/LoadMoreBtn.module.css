@@ -1,0 +1,15 @@
+.loadMoreBtn {
+  weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  background-color: #ff3d00;
+  border-style: none;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

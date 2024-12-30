@@ -1,0 +1,21 @@
+.galleryList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 34px 30px 50px;
+  justify-content: center;
+}
+.galleryItem {
+  width: calc((100% - 24px * 2) / 3);
+  box-sizing: border-box;
+  border: 1px solid #393838;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  box-shadow: 10px 10px 10px 5px #393838;
+}
+.galleryItem:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px 5px #635757;
+}
