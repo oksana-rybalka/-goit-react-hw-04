@@ -3,6 +3,5 @@
   font-size: 48px;
   color: #ff3d00;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5),
-    1px 1px 0px rgba(255, 255, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
