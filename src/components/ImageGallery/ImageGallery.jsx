@@ -1,28 +1,13 @@
-import toast from "react-hot-toast";
 import PropTypes from "prop-types";
 import ImageCard from "../ImageCard/ImageCard";
 import styles from "./ImageGallery.module.css";
 
-const ImageGallery = ({ images }) => {
-  console.log(images);
-  if (images.length === 0) {
-    toast.error("No images found for your query.", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-    return;
-  }
-
+const ImageGallery = ({ images, onImageClick }) => {
   return (
     <ul className={styles.galleryList}>
       {images.map((image) => (
         <li className={styles.galleryItem} key={image.id}>
-          <ImageCard key={image.id} image={image} />
+          <ImageCard image={image} onClick={onImageClick} />
         </li>
       ))}
     </ul>

@@ -7,15 +7,14 @@
   justify-content: center;
 }
 .galleryItem {
-  width: calc((100% - 24px * 2) / 3);
   box-sizing: border-box;
   border: 1px solid #393838;
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s;
-  box-shadow: 10px 10px 10px 5px #393838;
+  box-shadow: 8px 8px 8px 3px #393838;
 }
 .galleryItem:hover {
-  transform: scale(1.05);
-  box-shadow: 10px 10px 10px 5px #635757;
+  transform: scale(1.03);
+  box-shadow: 0px 0px 10px 3px #7a6c6c;
 }

@@ -1,35 +1,43 @@
 .inputImg {
-  width: 272px;
-  padding: 10px 16px;
+  width: 280px;
+  padding: 10px 15px;
   border: 1px solid #808080;
   border-radius: 8px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #808080;
   outline: none;
 }
 .inputImg:hover {
-  border: #ff3d00;
+  border: 3px solid #ff3d00;
 }
+
 .searchImgForm {
   display: flex;
   flex-direction: row;
   gap: 15px;
   padding-top: 10px;
   padding-bottom: 15px;
+  justify-content: center;
 }
 .submitBtn {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
-  padding: 10px 16px;
+  padding: 15px;
   border-radius: 8px;
-  width: 91px;
+  width: 180px;
   background-color: #ff3d00;
   border-style: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submitBtn:hover,
+.submitBtn:focus {
+  color: darkslategrey;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5),
+    1px 1px 0px rgba(255, 255, 0, 0.5);
 }

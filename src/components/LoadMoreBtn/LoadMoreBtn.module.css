@@ -1,15 +1,21 @@
 .loadMoreBtn {
-  weight: 500;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #fff;
-  padding: 10px 16px;
+  padding: 16px 16px;
   border-radius: 8px;
   width: 160px;
   display: block;
   margin: 0 auto;
   background-color: #ff3d00;
   border-style: none;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.loadMoreBtn:hover,
+.loadMoreBtn:focus {
+  color: darkslategrey;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5),
+    1px 1px 0px rgba(255, 255, 0, 0.5);
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = ({ onSubmit }) => {
@@ -13,7 +13,17 @@ const SearchBar = ({ onSubmit }) => {
     event.preventDefault();
 
     if (query.trim() === "") {
-      Toaster.error("Please enter a search term.");
+      toast.error("Please enter a search term!", {
+        position: "top-center",
+        autoClose: 3000,
+        closeOnClick: true,
+        pauseOnHover: true,
+        borderRadius: "10px",
+        style: {
+          fontSize: "20px",
+          color: "red",
+        },
+      });
       return;
     }
 
@@ -31,10 +41,10 @@ const SearchBar = ({ onSubmit }) => {
           onChange={handleInputChange}
           autoComplete="off"
           autoFocus
-          placeholder="Search images and photos"
+          placeholder="What are you hunting for?"
         />
         <button className={styles.submitBtn} type="submit">
-          Search
+          Start the hunt
         </button>
       </form>
     </header>
