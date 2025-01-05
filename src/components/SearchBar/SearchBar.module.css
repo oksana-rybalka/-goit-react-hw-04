@@ -4,7 +4,6 @@
   border: 2px solid darkslategrey;
   border-radius: 8px;
   font-weight: 400;
-  font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: darkslategrey;
@@ -42,4 +41,32 @@
 .submitBtn:focus {
   color: darkslategrey;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .inputImg {
+    width: 240px;
+    padding: 8px 12px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .submitBtn {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 12px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inputImg {
+    width: 200px;
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .submitBtn {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    width: 130px;
+  }
 }
