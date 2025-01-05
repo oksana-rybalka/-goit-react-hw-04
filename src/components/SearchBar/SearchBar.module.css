@@ -1,17 +1,20 @@
 .inputImg {
   width: 280px;
   padding: 10px 15px;
-  border: 1px solid #808080;
+  border: 2px solid darkslategrey;
   border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.04em;
-  color: #808080;
+  color: darkslategrey;
   outline: none;
 }
 .inputImg:hover {
-  border: 3px solid #ff3d00;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+.inputImg:focus {
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 .searchImgForm {
@@ -38,6 +41,5 @@
 .submitBtn:hover,
 .submitBtn:focus {
   color: darkslategrey;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5),
-    1px 1px 0px rgba(255, 255, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
 }

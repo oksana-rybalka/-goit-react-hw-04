@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-modal";
 import styles from "./ImageModal.module.css";
@@ -6,18 +5,6 @@ import styles from "./ImageModal.module.css";
 Modal.setAppElement("#root");
 
 const ImageModal = ({ isOpen, onClose, largeImageURL, alt }) => {
-  useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
-    };
-    window.addEventListener("keydown", handleEscape);
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-    };
-  }, [onClose]);
-
   return (
     <Modal
       isOpen={isOpen}

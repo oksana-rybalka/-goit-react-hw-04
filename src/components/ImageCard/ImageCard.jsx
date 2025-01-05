@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 
 const ImageCard = ({ image, onClick }) => {
   return (
-    <div className={styles.imageCard} onClick={() => onClick(image)}>
+    <div className={styles.imageCard}>
       <img
+        onClick={() => onClick(image)}
         src={image.urls.small}
         width={360}
         alt={image.alt_description || "Image"}
