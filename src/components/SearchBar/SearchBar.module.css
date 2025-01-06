@@ -54,13 +54,16 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .searchImgForm {
+    padding-bottom: 10px;
+  }
   .inputImg {
     width: 150px;
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .submitBtn {
-    font-size: 12px;
+    font-size: 10px;
     padding: 5px;
     width: 100px;
   }
