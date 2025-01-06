@@ -1,9 +1,9 @@
 .inputImg {
   width: 280px;
+  font-size: 18px;
   padding: 10px 15px;
   border: 2px solid darkslategrey;
   border-radius: 8px;
-  font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.04em;
   color: darkslategrey;
@@ -25,7 +25,6 @@
   justify-content: center;
 }
 .submitBtn {
-  font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0.04em;
@@ -45,28 +44,24 @@
 @media screen and (max-width: 768px) {
   .inputImg {
     width: 240px;
-    padding: 8px 12px;
-    font-weight: 300;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 16px;
   }
   .submitBtn {
-    font-weight: 400;
-    font-size: 18px;
-    padding: 12px;
+    font-size: 16px;
+    padding: 8px;
     width: 150px;
   }
 }
 @media screen and (max-width: 480px) {
   .inputImg {
-    width: 200px;
-    padding: 5px 10px;
-    font-weight: 300;
-    font-size: 14px;
+    width: 150px;
+    padding: 5px;
+    font-size: 12px;
   }
   .submitBtn {
-    font-weight: 400;
-    font-size: 14px;
-    padding: 10px;
-    width: 130px;
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
   }
 }

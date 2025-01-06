@@ -5,3 +5,13 @@
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 768px) {
+  .titleImageApp {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .titleImageApp {
+    font-size: 28px;
+  }
+}
