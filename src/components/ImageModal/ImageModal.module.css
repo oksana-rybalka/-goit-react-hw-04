@@ -1,8 +1,8 @@
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 30%;
+  transform: translate(-22%, -40%);
   background-color: rgb(22, 52, 47);
   padding: 10px;
   border-radius: 10px;
@@ -29,4 +29,5 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
