@@ -80,11 +80,11 @@ function App() {
       } catch (error) {
         setError(error.message);
         toast.error("Something went wrong. Please try again.", {
-          position: "bottom-center",
+          position: "top-center",
           duration: 4000,
           style: {
             fontSize: "20px",
-            fontWeight: "bold",
+            fontWeight: "normal",
             backgroundColor: "red",
             color: "white",
             textAlign: "center",
